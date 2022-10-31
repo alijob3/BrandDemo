@@ -23,8 +23,8 @@ public class BaseServlet extends HttpServlet {
             Method method = aClass.getMethod(methodName, HttpServletRequest.class, HttpServletResponse.class);
             method.invoke(this,req,resp);
         } catch (Exception e) {
-//            e.printStackTrace();
-            System.out.println("这里出错");
+            e.printStackTrace();
+
         }
 
 
